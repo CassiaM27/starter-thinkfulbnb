@@ -178,7 +178,7 @@ footer p {
 
 }
 
-@media all and (min-width: 705px){
+@media all and (min-width: 722px){
   header {
     justify-content: space-between;
   }
