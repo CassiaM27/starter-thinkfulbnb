@@ -61,7 +61,7 @@ header {
 
 .logo {
   font-family: "Pangolin", cursive;
-  font-size: 72px;
+  font-size: 60px;
   color: #fff;
 }
 
@@ -132,6 +132,12 @@ footer p {
 
 /* -------  Media Query ------- */
 
+@media all and (min-width: 360px) {
+  .logo {
+    font-size: 72px;
+  }
+}
+
 @media all and (min-width: 480px) {
   
   header {
@@ -166,9 +172,13 @@ footer p {
     text-align: center;
     display: flex;
     flex-wrap: wrap;
-    flex: 0 48%;
+    flex: 0 45%;
+    justify-content: space-around;
   }
 
+}
+
+@media all and (min-width: 1190px) {
   form {
     flex-wrap: nowrap;
     flex-direction: row;
@@ -193,5 +203,4 @@ footer p {
     max-height: 60px;
     margin: auto;
   }
-
 }
