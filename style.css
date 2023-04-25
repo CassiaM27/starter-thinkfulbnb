@@ -144,7 +144,7 @@ footer p {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
   header nav ul {
@@ -178,6 +178,13 @@ footer p {
 
 }
 
+@media all and (min-width: 705px){
+  header {
+    justify-content: space-between;
+  }
+
+}
+
 @media all and (min-width: 1190px) {
   form {
     flex-wrap: nowrap;
@@ -194,7 +201,7 @@ footer p {
 
   form input,
   form select {
-    margin: 5%;
+    margin: auto;
     justify-content: left;
   }
 
