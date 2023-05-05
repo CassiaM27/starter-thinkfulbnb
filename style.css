@@ -147,6 +147,7 @@ footer p {
   header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   .logo {
@@ -162,20 +163,25 @@ footer p {
 
   form {
     display: flex;
-    flex-direction: space-between;
-    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
   }
-  
-  form div {
+
+  form > div {
     display: block;
   }
 
-  form select, form input {
-    margin: 0px;
+  form button {
+    width: unset;
+  }
+
+  form label {
+    display: block;
   }
 
   .group {
     flex-direction: row;
+    align-items: center;
     flex-wrap: wrap;
   }
 
