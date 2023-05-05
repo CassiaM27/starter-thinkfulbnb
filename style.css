@@ -142,30 +142,48 @@ footer p {
   
   header {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+  }
+
+  .logo {
+    margin: 14px 0px;
+    padding-top: 0;
+    font-size: 38px;
   }
 
   header nav ul {
     font-size: 15px;
     margin-top: 26px;
+    align-items: center;
   }
 
-  header nav ul li {
-    margin-right: 15px;
-  }
 
   .group {
+    display: flex;
     flex-direction: row;
   }
 
-  .item {
-    flex-direction: row;
+  form {
+    display: flex;
+    flex-direction: space-between;
+    flex-wrap: nowrap;
+  }
+  
+  form div {
+    flex-direction: column;
   }
 
-  .item-double {
-    margin: auto;
+  form button {
+    flex: 1;
+  }
+
+  form select, form input {
+    margin-bottom: 0px;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: row;
   }
 
   .ideas {
