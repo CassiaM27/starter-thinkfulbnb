@@ -1,7 +1,7 @@
 /* -------  General Styles ------- */
-
 body {
   font-family: "Lato", sans-serif;
+  min-width: 400px;
 }
 
 h2 {
@@ -31,7 +31,7 @@ section.alternate-background {
 }
 
 main img {
-  width: 100%;
+  width: 100px;
 }
 
 /* ---  Groups & Items --- */
@@ -39,7 +39,6 @@ main img {
 .group {
   display: flex;
   flex-direction: column;
-  width: 100%;
 }
 
 .item {
@@ -51,6 +50,11 @@ main img {
   flex: 2;
 }
 
+.group img {
+  width: 100%;
+}
+
+
 /* -------  Navigation ------- */
 
 header {
@@ -61,7 +65,7 @@ header {
 
 .logo {
   font-family: "Pangolin", cursive;
-  font-size: 60px;
+  font-size: 72px;
   color: #fff;
 }
 
@@ -81,6 +85,10 @@ header nav ul li a {
   padding: 0 20px 0 0;
 }
 
+header nav ul li:last-child a {
+  padding: 0;
+}
+
 header nav ul li a:hover {
   color: #bdbdbd;
   text-decoration: none;
@@ -90,12 +98,11 @@ header nav ul li a:hover {
 form {
   border: 2px solid #ff385c;
   padding: 10px;
-  display: flex;
-  flex-wrap: wrap;
 }
 
 form label {
   font-weight: bold;
+  margin-right: 5px;
 }
 
 form select,
@@ -113,9 +120,10 @@ form button {
   width: 100%;
 }
 
-.form-item {
+form div {
   display: flex;
   justify-content: space-between;
+  padding: 10px;
 }
 
 /* -------  Footer ------- */
@@ -131,15 +139,11 @@ footer p {
 }
 
 /* -------  Media Query ------- */
-
-@media all and (min-width: 360px) {
-  .logo {
-    font-size: 72px;
-  }
-}
-
 @media all and (min-width: 480px) {
-  
+  body {
+    min-width: 980px;
+  }
+
   header {
     display: flex;
     justify-content: space-between;
@@ -148,19 +152,12 @@ footer p {
   .logo {
     margin: 14px 0px;
     padding-top: 0;
-    font-size: 38px;
   }
 
   header nav ul {
-    font-size: 15px;
-    margin-top: 26px;
+    font-size: 24px;
+    margin: 32px 0px;
     align-items: center;
-  }
-
-
-  .group {
-    display: flex;
-    flex-direction: row;
   }
 
   form {
@@ -170,28 +167,19 @@ footer p {
   }
   
   form div {
-    flex-direction: column;
-  }
-
-  form button {
-    flex: 1;
+    display: block;
   }
 
   form select, form input {
-    margin-bottom: 0px;
+    margin: 0px;
   }
 
-  .form-group {
-    display: flex;
+  .group {
     flex-direction: row;
-  }
-
-  .ideas {
-    text-align: center;
-    display: flex;
     flex-wrap: wrap;
-    flex: 0 40%;
-    justify-content: space-around;
   }
 
+  #ideas .group .item {
+    flex: 1 1 calc(50% - 50px);
+  }
 }

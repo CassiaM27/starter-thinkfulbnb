@@ -35,48 +35,42 @@
       <section id="stay">
         <h2>Find the perfect vacation rental</h2>
         <!-- Create a form here -->
-        <div>
-          <form class="form-group">
-            <div class="item form-item">
-              <label>Location</label>
-              <input 
-              id="location"
-              name="location"
-              type="text"
-              placeholder="Enter a location"
-              />
-            </div>
-            <div class="item form-item">
-              <label>Arrive</label>
-              <input 
-              id="arrive"
-              name="arrive"
-              type="date"
-              />
-            </div>
-            <div class="item form-item">
-              <label>Depart</label>
-              <input 
-              id="depart"
-              name="depart"
-              type="date"
-              />
-            </div>
-            <div class="item form-item">
-              <label>Type</label>
-              <select name="type" id="type" size="1">
-                <option value="apartment">Apartment</option>
-                <option value="barn">Barn</option>
-                <option value="castle">Castle</option>
-                <option value="Houseboat">Houseboat</option>
-                <option value="tiny-house">Tiny House</option>
-                <option value="yacht">Yacht</option>
-                <option value="yurt">Yurt</option>
-              </select>
-            </div>
-            <button type="submit">Search</button>
-          </form>
-      </div>
+<form>
+  <div>
+    <label for="location">Location </label>
+    <input
+      name="location"
+      id="location"
+      type="text"
+      placeholder="Search destination"
+    />
+  </div>
+  <div>
+    <label for="arrive">Arrive</label>
+    <input name="arrive" id="arrive" type="date" />
+  </div>
+  <div>
+    <label for="depart">Depart</label>
+    <input name="depart" id="depart" type="date" />
+  </div>
+  <div>
+    <label for="type">Type</label>
+
+    <select id="type" name="type">
+      <option value="Apartment">Apartment</option>
+      <option value="Barn">Barn</option>
+      <option value="Castle">Castle</option>
+      <option value="Houseboat">Houseboat</option>
+      <option value="Tiny House">Tiny House</option>
+      <option value="Yacht">Yacht</option>
+      <option value="Yurt">Yurt</option>
+    </select>
+  </div>
+
+  <button type="submit">Search</button>
+</form>
+
+
       </section>
 
       <!-- About -->
@@ -111,27 +105,33 @@
       </section>
 
       <!-- Ideas -->
-      <section id="ideas">
-          <h2>Ideas</h2>
-        <div class="ideas">
-          <div class="ideas item">
-            <h3>Forest retreats</h3>
-            <img src="images/forest-retreat.png"
-              alt="Thinkfulbnb - Forest retreat" />
-          </div>
-          <div class="ideas item">
-            <h3>Beaches</h3>
-            <img src="images/beach-house.png" alt="Thinkfulbnb - Beach house" />
-          </div>
-          <div class="ideas item">
-            <h3>Rustic cabins</h3>
-            <img src="images/cabin.png" alt="Thinkfulbnb - Cabin" />
-          </div>
-          <div class="ideas item">
-            <h3>Pet-friendly</h3>
-            <img src="images/pet-friendly.png" alt="Thinkfulbnb - Pet-friendly" />
-          </div>
-        </div>
+<section id="ideas">
+  <h2>Ideas</h2>
+  <div class="group">
+    <div class="item">
+      <h3>Forest retreats</h3>
+      <img
+        src="images/forest-retreat.png"
+        alt="Thinkfulbnb - Forest retreat"
+      />
+    </div>
+    <div class="item">
+      <h3>Beaches</h3>
+      <img src="images/beach-house.png" alt="Thinkfulbnb - Beach house" />
+    </div>
+    <div class="item">
+      <h3>Rustic cabins</h3>
+      <img src="images/cabin.png" alt="Thinkfulbnb - Cabin" />
+    </div>
+    <div class="item">
+      <h3>Pet-friendly</h3>
+      <img
+        src="images/pet-friendly.png"
+        alt="Thinkfulbnb - Pet-friendly"
+      />
+    </div>
+  </div>
+
       </section>
 
       <!-- Host -->
