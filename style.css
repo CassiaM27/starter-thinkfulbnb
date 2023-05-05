@@ -172,42 +172,8 @@ footer p {
     text-align: center;
     display: flex;
     flex-wrap: wrap;
-    flex: 0 45%;
+    flex: 0 40%;
     justify-content: space-around;
   }
 
-}
-
-@media all and (min-width: 722px){
-  header {
-    justify-content: space-between;
-  }
-
-}
-
-@media all and (min-width: 1190px) {
-  form {
-    flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-  }
-
-  form label {
-    margin: auto;
-    margin-right: 5px;
-    text-align: right;
-  }
-
-  form input,
-  form select {
-    margin: auto;
-    justify-content: left;
-  }
-
-  form button {
-    max-width: 240px;
-    max-height: 60px;
-    margin: auto;
-  }
 }
